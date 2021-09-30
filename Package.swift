@@ -12,38 +12,13 @@ let package = Package(
     products: [
     
         .library(
-            name: "PayPalDataCollector",
-            targets: ["PayPalDataCollector"]
+            name: "Amplitude",
+            targets: ["Amplitude"]
         ),
      
         .library(
-            name: "ReactiveSwift",
-            targets: ["ReactiveSwift"]
-        ),
-     
-        .library(
-            name: "BraintreePayPal",
-            targets: ["BraintreePayPal"]
-        ),
-     
-        .library(
-            name: "Kronos",
-            targets: ["Kronos"]
-        ),
-     
-        .library(
-            name: "nanopb",
-            targets: ["nanopb"]
-        ),
-     
-        .library(
-            name: "PPRiskMagnes",
-            targets: ["PPRiskMagnes"]
-        ),
-     
-        .library(
-            name: "geos",
-            targets: ["geos"]
+            name: "BraintreeAmericanExpress",
+            targets: ["BraintreeAmericanExpress"]
         ),
      
         .library(
@@ -52,33 +27,38 @@ let package = Package(
         ),
      
         .library(
-            name: "SwiftyMarkdown",
-            targets: ["SwiftyMarkdown"]
-        ),
-     
-        .library(
-            name: "CardinalMobile",
-            targets: ["CardinalMobile"]
-        ),
-     
-        .library(
-            name: "RealmSwift",
-            targets: ["RealmSwift"]
-        ),
-     
-        .library(
-            name: "PromisesObjC",
-            targets: ["PromisesObjC"]
-        ),
-     
-        .library(
             name: "BraintreeCard",
             targets: ["BraintreeCard"]
         ),
      
         .library(
-            name: "FirebaseAnalytics",
-            targets: ["FirebaseAnalytics"]
+            name: "BraintreeCore",
+            targets: ["BraintreeCore"]
+        ),
+     
+        .library(
+            name: "BraintreeDataCollector",
+            targets: ["BraintreeDataCollector"]
+        ),
+     
+        .library(
+            name: "BraintreePayPal",
+            targets: ["BraintreePayPal"]
+        ),
+     
+        .library(
+            name: "BraintreePaymentFlow",
+            targets: ["BraintreePaymentFlow"]
+        ),
+     
+        .library(
+            name: "BraintreeTestShared",
+            targets: ["BraintreeTestShared"]
+        ),
+     
+        .library(
+            name: "BraintreeThreeDSecure",
+            targets: ["BraintreeThreeDSecure"]
         ),
      
         .library(
@@ -92,78 +72,33 @@ let package = Package(
         ),
      
         .library(
-            name: "GEOSwift",
-            targets: ["GEOSwift"]
+            name: "CardinalMobile",
+            targets: ["CardinalMobile"]
         ),
      
         .library(
-            name: "FirebaseDatabase",
-            targets: ["FirebaseDatabase"]
+            name: "FBSDKCoreKit",
+            targets: ["FBSDKCoreKit"]
         ),
      
         .library(
-            name: "Amplitude",
-            targets: ["Amplitude"]
+            name: "FBSDKGamingServicesKit",
+            targets: ["FBSDKGamingServicesKit"]
         ),
      
         .library(
-            name: "BraintreeTestShared",
-            targets: ["BraintreeTestShared"]
+            name: "FBSDKLoginKit",
+            targets: ["FBSDKLoginKit"]
         ),
      
         .library(
-            name: "leveldb-library",
-            targets: ["leveldb-library"]
+            name: "FBSDKShareKit",
+            targets: ["FBSDKShareKit"]
         ),
      
         .library(
-            name: "FirebaseCoreDiagnostics",
-            targets: ["FirebaseCoreDiagnostics"]
-        ),
-     
-        .library(
-            name: "Polyline",
-            targets: ["Polyline"]
-        ),
-     
-        .library(
-            name: "BraintreeDataCollector",
-            targets: ["BraintreeDataCollector"]
-        ),
-     
-        .library(
-            name: "NewRelic",
-            targets: ["NewRelic"]
-        ),
-     
-        .library(
-            name: "SnapshotTesting",
-            targets: ["SnapshotTesting"]
-        ),
-     
-        .library(
-            name: "FirebaseInstallations",
-            targets: ["FirebaseInstallations"]
-        ),
-     
-        .library(
-            name: "Realm",
-            targets: ["Realm"]
-        ),
-     
-        .library(
-            name: "ReactiveMapKit",
-            targets: ["ReactiveMapKit"]
-        ),
-     
-        .library(
-            name: "FirebaseCore",
-            targets: ["FirebaseCore"]
-        ),
-     
-        .library(
-            name: "BraintreeThreeDSecure",
-            targets: ["BraintreeThreeDSecure"]
+            name: "FIRAnalyticsConnector",
+            targets: ["FIRAnalyticsConnector"]
         ),
      
         .library(
@@ -172,23 +107,33 @@ let package = Package(
         ),
      
         .library(
-            name: "BraintreePaymentFlow",
-            targets: ["BraintreePaymentFlow"]
+            name: "FirebaseAnalytics",
+            targets: ["FirebaseAnalytics"]
         ),
      
         .library(
-            name: "BraintreeAmericanExpress",
-            targets: ["BraintreeAmericanExpress"]
+            name: "FirebaseCore",
+            targets: ["FirebaseCore"]
         ),
      
         .library(
-            name: "GoogleDataTransport",
-            targets: ["GoogleDataTransport"]
+            name: "FirebaseCoreDiagnostics",
+            targets: ["FirebaseCoreDiagnostics"]
         ),
      
         .library(
-            name: "Interpolate",
-            targets: ["Interpolate"]
+            name: "FirebaseDatabase",
+            targets: ["FirebaseDatabase"]
+        ),
+     
+        .library(
+            name: "FirebaseInstallations",
+            targets: ["FirebaseInstallations"]
+        ),
+     
+        .library(
+            name: "GEOSwift",
+            targets: ["GEOSwift"]
         ),
      
         .library(
@@ -197,8 +142,48 @@ let package = Package(
         ),
      
         .library(
-            name: "BraintreeCore",
-            targets: ["BraintreeCore"]
+            name: "GoogleDataTransport",
+            targets: ["GoogleDataTransport"]
+        ),
+     
+        .library(
+            name: "GoogleUtilities",
+            targets: ["GoogleUtilities"]
+        ),
+     
+        .library(
+            name: "Interpolate",
+            targets: ["Interpolate"]
+        ),
+     
+        .library(
+            name: "Kronos",
+            targets: ["Kronos"]
+        ),
+     
+        .library(
+            name: "NewRelic",
+            targets: ["NewRelic"]
+        ),
+     
+        .library(
+            name: "PPRiskMagnes",
+            targets: ["PPRiskMagnes"]
+        ),
+     
+        .library(
+            name: "PayPalDataCollector",
+            targets: ["PayPalDataCollector"]
+        ),
+     
+        .library(
+            name: "Polyline",
+            targets: ["Polyline"]
+        ),
+     
+        .library(
+            name: "PromisesObjC",
+            targets: ["PromisesObjC"]
         ),
      
         .library(
@@ -207,8 +192,48 @@ let package = Package(
         ),
      
         .library(
-            name: "GoogleUtilities",
-            targets: ["GoogleUtilities"]
+            name: "ReactiveMapKit",
+            targets: ["ReactiveMapKit"]
+        ),
+     
+        .library(
+            name: "ReactiveSwift",
+            targets: ["ReactiveSwift"]
+        ),
+     
+        .library(
+            name: "Realm",
+            targets: ["Realm"]
+        ),
+     
+        .library(
+            name: "RealmSwift",
+            targets: ["RealmSwift"]
+        ),
+     
+        .library(
+            name: "SnapshotTesting",
+            targets: ["SnapshotTesting"]
+        ),
+     
+        .library(
+            name: "SwiftyMarkdown",
+            targets: ["SwiftyMarkdown"]
+        ),
+     
+        .library(
+            name: "geos",
+            targets: ["geos"]
+        ),
+     
+        .library(
+            name: "leveldb-library",
+            targets: ["leveldb-library"]
+        ),
+     
+        .library(
+            name: "nanopb",
+            targets: ["nanopb"]
         ),
      
     ],
@@ -217,203 +242,228 @@ let package = Package(
     targets: [
         
             .binaryTarget(
-                name: "PayPalDataCollector",
-                path: "Carthage/Build/PayPalDataCollector.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "ReactiveSwift",
-                path: "Carthage/Build/ReactiveSwift.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "BraintreePayPal",
-                path: "Carthage/Build/BraintreePayPal.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "Kronos",
-                path: "Carthage/Build/Kronos.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "nanopb",
-                path: "Carthage/Build/nanopb.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "PPRiskMagnes",
-                path: "Carthage/Build/PPRiskMagnes.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "geos",
-                path: "Carthage/Build/geos.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "BraintreeApplePay",
-                path: "Carthage/Build/BraintreeApplePay.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "SwiftyMarkdown",
-                path: "Carthage/Build/SwiftyMarkdown.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "CardinalMobile",
-                path: "Carthage/Build/CardinalMobile.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "RealmSwift",
-                path: "Carthage/Build/RealmSwift.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "PromisesObjC",
-                path: "Carthage/Build/PromisesObjC.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "BraintreeCard",
-                path: "Carthage/Build/BraintreeCard.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "FirebaseAnalytics",
-                path: "Carthage/Build/FirebaseAnalytics.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "BraintreeUnionPay",
-                path: "Carthage/Build/BraintreeUnionPay.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "BraintreeVenmo",
-                path: "Carthage/Build/BraintreeVenmo.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "GEOSwift",
-                path: "Carthage/Build/GEOSwift.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "FirebaseDatabase",
-                path: "Carthage/Build/FirebaseDatabase.xcframework"           
-            ),
-        
-            .binaryTarget(
                 name: "Amplitude",
-                path: "Carthage/Build/Amplitude.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "BraintreeTestShared",
-                path: "Carthage/Build/BraintreeTestShared.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "leveldb-library",
-                path: "Carthage/Build/leveldb-library.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "FirebaseCoreDiagnostics",
-                path: "Carthage/Build/FirebaseCoreDiagnostics.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "Polyline",
-                path: "Carthage/Build/Polyline.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "BraintreeDataCollector",
-                path: "Carthage/Build/BraintreeDataCollector.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "NewRelic",
-                path: "Carthage/Build/NewRelic.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "SnapshotTesting",
-                path: "Carthage/Build/SnapshotTesting.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "FirebaseInstallations",
-                path: "Carthage/Build/FirebaseInstallations.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "Realm",
-                path: "Carthage/Build/Realm.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "ReactiveMapKit",
-                path: "Carthage/Build/ReactiveMapKit.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "FirebaseCore",
-                path: "Carthage/Build/FirebaseCore.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "BraintreeThreeDSecure",
-                path: "Carthage/Build/BraintreeThreeDSecure.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "Firebase",
-                path: "Carthage/Build/Firebase.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "BraintreePaymentFlow",
-                path: "Carthage/Build/BraintreePaymentFlow.xcframework"           
+                path: ""           
             ),
         
             .binaryTarget(
                 name: "BraintreeAmericanExpress",
-                path: "Carthage/Build/BraintreeAmericanExpress.xcframework"           
+                path: ""           
             ),
         
             .binaryTarget(
-                name: "GoogleDataTransport",
-                path: "Carthage/Build/GoogleDataTransport.xcframework"           
+                name: "BraintreeApplePay",
+                path: ""           
             ),
         
             .binaryTarget(
-                name: "Interpolate",
-                path: "Carthage/Build/Interpolate.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "GoogleAppMeasurement",
-                path: "Carthage/Build/GoogleAppMeasurement.xcframework"           
+                name: "BraintreeCard",
+                path: ""           
             ),
         
             .binaryTarget(
                 name: "BraintreeCore",
-                path: "Carthage/Build/BraintreeCore.xcframework"           
+                path: ""           
             ),
         
             .binaryTarget(
-                name: "ReactiveCocoa",
-                path: "Carthage/Build/ReactiveCocoa.xcframework"           
+                name: "BraintreeDataCollector",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "BraintreePayPal",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "BraintreePaymentFlow",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "BraintreeTestShared",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "BraintreeThreeDSecure",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "BraintreeUnionPay",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "BraintreeVenmo",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "CardinalMobile",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FBSDKCoreKit",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FBSDKGamingServicesKit",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FBSDKLoginKit",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FBSDKShareKit",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FIRAnalyticsConnector",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "Firebase",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FirebaseAnalytics",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FirebaseCore",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FirebaseCoreDiagnostics",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FirebaseDatabase",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "FirebaseInstallations",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "GEOSwift",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "GoogleAppMeasurement",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "GoogleDataTransport",
+                path: ""           
             ),
         
             .binaryTarget(
                 name: "GoogleUtilities",
-                path: "Carthage/Build/GoogleUtilities.xcframework"           
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "Interpolate",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "Kronos",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "NewRelic",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "PPRiskMagnes",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "PayPalDataCollector",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "Polyline",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "PromisesObjC",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "ReactiveCocoa",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "ReactiveMapKit",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "ReactiveSwift",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "Realm",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "RealmSwift",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "SnapshotTesting",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "SwiftyMarkdown",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "geos",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "leveldb-library",
+                path: ""           
+            ),
+        
+            .binaryTarget(
+                name: "nanopb",
+                path: ""           
             ),
         
     ]
