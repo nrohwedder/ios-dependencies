@@ -23,8 +23,7 @@ let package = Package(
         <% xcframeworks.each do |xcframework| %>
             .binaryTarget(
                 name: "<%= xcframework[:name] %>",
-                url: "<%= xcframework[:url] %>",
-                checksum: "<%= xcframework[:checksum] %>"           
+                path: "<%= xcframework[:path] %>"           
             ),
         <% end %>
     ]

@@ -16,9 +16,14 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
-### ios bump
+### ios unzip_dependencies
 ```
-fastlane ios bump
+fastlane ios unzip_dependencies
+```
+
+### ios build_dependencies
+```
+fastlane ios build_dependencies
 ```
 
 
