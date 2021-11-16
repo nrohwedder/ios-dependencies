@@ -40,7 +40,7 @@ let package = Package(
             name: "PPRiskMagnes",
             targets: ["PPRiskMagnes"]
         ),
-    
+     
         .library(
             name: "BraintreeApplePay",
             targets: ["BraintreeApplePay"]
