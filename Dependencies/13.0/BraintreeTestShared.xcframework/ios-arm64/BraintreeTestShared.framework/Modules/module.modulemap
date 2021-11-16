@@ -1,0 +1,11 @@
+framework module BraintreeTestShared {
+  umbrella header "BraintreeTestShared.h"
+
+  export *
+  module * { export * }
+}
+
+module BraintreeTestShared.Swift {
+    header "BraintreeTestShared-Swift.h"
+    requires objc
+}

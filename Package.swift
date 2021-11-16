@@ -40,12 +40,7 @@ let package = Package(
             name: "PPRiskMagnes",
             targets: ["PPRiskMagnes"]
         ),
-     
-        .library(
-            name: "geos",
-            targets: ["geos"]
-        ),
-     
+    
         .library(
             name: "BraintreeApplePay",
             targets: ["BraintreeApplePay"]
@@ -89,11 +84,6 @@ let package = Package(
         .library(
             name: "BraintreeVenmo",
             targets: ["BraintreeVenmo"]
-        ),
-     
-        .library(
-            name: "GEOSwift",
-            targets: ["GEOSwift"]
         ),
      
         .library(
@@ -218,203 +208,220 @@ let package = Package(
         
             .binaryTarget(
                 name: "PayPalDataCollector",
-                path: "Carthage/Build/PayPalDataCollector.xcframework"           
+                filename: "PayPalDataCollector.xcframework"          
             ),
         
             .binaryTarget(
                 name: "ReactiveSwift",
-                path: "Carthage/Build/ReactiveSwift.xcframework"           
+                filename: "ReactiveSwift.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreePayPal",
-                path: "Carthage/Build/BraintreePayPal.xcframework"           
+                filename: "BraintreePayPal.xcframework"          
             ),
         
             .binaryTarget(
                 name: "Kronos",
-                path: "Carthage/Build/Kronos.xcframework"           
+                filename: "Kronos.xcframework"          
             ),
         
             .binaryTarget(
                 name: "nanopb",
-                path: "Carthage/Build/nanopb.xcframework"           
+                filename: "nanopb.xcframework"          
             ),
         
             .binaryTarget(
                 name: "PPRiskMagnes",
-                path: "Carthage/Build/PPRiskMagnes.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "geos",
-                path: "Carthage/Build/geos.xcframework"           
+                filename: "PPRiskMagnes.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreeApplePay",
-                path: "Carthage/Build/BraintreeApplePay.xcframework"           
+                filename: "BraintreeApplePay.xcframework"          
             ),
         
             .binaryTarget(
                 name: "SwiftyMarkdown",
-                path: "Carthage/Build/SwiftyMarkdown.xcframework"           
+                filename: "SwiftyMarkdown.xcframework"          
             ),
         
             .binaryTarget(
                 name: "CardinalMobile",
-                path: "Carthage/Build/CardinalMobile.xcframework"           
+                filename: "CardinalMobile.xcframework"          
             ),
         
             .binaryTarget(
                 name: "RealmSwift",
-                path: "Carthage/Build/RealmSwift.xcframework"           
+                filename: "RealmSwift.xcframework"          
             ),
         
             .binaryTarget(
                 name: "PromisesObjC",
-                path: "Carthage/Build/PromisesObjC.xcframework"           
+                filename: "PromisesObjC.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreeCard",
-                path: "Carthage/Build/BraintreeCard.xcframework"           
+                filename: "BraintreeCard.xcframework"          
             ),
         
             .binaryTarget(
                 name: "FirebaseAnalytics",
-                path: "Carthage/Build/FirebaseAnalytics.xcframework"           
+                filename: "FirebaseAnalytics.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreeUnionPay",
-                path: "Carthage/Build/BraintreeUnionPay.xcframework"           
+                filename: "BraintreeUnionPay.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreeVenmo",
-                path: "Carthage/Build/BraintreeVenmo.xcframework"           
-            ),
-        
-            .binaryTarget(
-                name: "GEOSwift",
-                path: "Carthage/Build/GEOSwift.xcframework"           
+                filename: "BraintreeVenmo.xcframework"          
             ),
         
             .binaryTarget(
                 name: "FirebaseDatabase",
-                path: "Carthage/Build/FirebaseDatabase.xcframework"           
+                filename: "FirebaseDatabase.xcframework"          
             ),
         
             .binaryTarget(
                 name: "Amplitude",
-                path: "Carthage/Build/Amplitude.xcframework"           
+                filename: "Amplitude.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreeTestShared",
-                path: "Carthage/Build/BraintreeTestShared.xcframework"           
+                filename: "BraintreeTestShared.xcframework"          
             ),
         
             .binaryTarget(
                 name: "leveldb-library",
-                path: "Carthage/Build/leveldb-library.xcframework"           
+                filename: "leveldb-library.xcframework"          
             ),
         
             .binaryTarget(
                 name: "FirebaseCoreDiagnostics",
-                path: "Carthage/Build/FirebaseCoreDiagnostics.xcframework"           
+                filename: "FirebaseCoreDiagnostics.xcframework"          
             ),
         
             .binaryTarget(
                 name: "Polyline",
-                path: "Carthage/Build/Polyline.xcframework"           
+                filename: "Polyline.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreeDataCollector",
-                path: "Carthage/Build/BraintreeDataCollector.xcframework"           
+                filename: "BraintreeDataCollector.xcframework"          
             ),
         
             .binaryTarget(
                 name: "NewRelic",
-                path: "Carthage/Build/NewRelic.xcframework"           
+                filename: "NewRelic.xcframework"          
             ),
         
             .binaryTarget(
                 name: "SnapshotTesting",
-                path: "Carthage/Build/SnapshotTesting.xcframework"           
+                filename: "SnapshotTesting.xcframework"          
             ),
         
             .binaryTarget(
                 name: "FirebaseInstallations",
-                path: "Carthage/Build/FirebaseInstallations.xcframework"           
+                filename: "FirebaseInstallations.xcframework"          
             ),
         
             .binaryTarget(
                 name: "Realm",
-                path: "Carthage/Build/Realm.xcframework"           
+                filename: "Realm.xcframework"          
             ),
         
             .binaryTarget(
                 name: "ReactiveMapKit",
-                path: "Carthage/Build/ReactiveMapKit.xcframework"           
+                filename: "ReactiveMapKit.xcframework"          
             ),
         
             .binaryTarget(
                 name: "FirebaseCore",
-                path: "Carthage/Build/FirebaseCore.xcframework"           
+                filename: "FirebaseCore.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreeThreeDSecure",
-                path: "Carthage/Build/BraintreeThreeDSecure.xcframework"           
+                filename: "BraintreeThreeDSecure.xcframework"          
             ),
         
             .binaryTarget(
                 name: "Firebase",
-                path: "Carthage/Build/Firebase.xcframework"           
+                filename: "Firebase.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreePaymentFlow",
-                path: "Carthage/Build/BraintreePaymentFlow.xcframework"           
+                filename: "BraintreePaymentFlow.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreeAmericanExpress",
-                path: "Carthage/Build/BraintreeAmericanExpress.xcframework"           
+                filename: "BraintreeAmericanExpress.xcframework"          
             ),
         
             .binaryTarget(
                 name: "GoogleDataTransport",
-                path: "Carthage/Build/GoogleDataTransport.xcframework"           
+                filename: "GoogleDataTransport.xcframework"          
             ),
         
             .binaryTarget(
                 name: "Interpolate",
-                path: "Carthage/Build/Interpolate.xcframework"           
+                filename: "Interpolate.xcframework"          
             ),
         
             .binaryTarget(
                 name: "GoogleAppMeasurement",
-                path: "Carthage/Build/GoogleAppMeasurement.xcframework"           
+                filename: "GoogleAppMeasurement.xcframework"          
             ),
         
             .binaryTarget(
                 name: "BraintreeCore",
-                path: "Carthage/Build/BraintreeCore.xcframework"           
+                filename: "BraintreeCore.xcframework"          
             ),
         
             .binaryTarget(
                 name: "ReactiveCocoa",
-                path: "Carthage/Build/ReactiveCocoa.xcframework"           
+                filename: "ReactiveCocoa.xcframework"          
             ),
         
             .binaryTarget(
                 name: "GoogleUtilities",
-                path: "Carthage/Build/GoogleUtilities.xcframework"           
+                filename: "GoogleUtilities.xcframework"          
             ),
         
     ]
 )
+
+extension Target {
+    enum XCodeVersion: String {
+        case v12_5, v13
+        
+        var rawValue: String {
+            switch self {
+            case .v12_5:
+                return "12.5"
+            case .v13:
+                return "13.0"
+            }
+        }
+    }
+    
+    private static func binaryTarget(name: String, filename: String, xcodeVersion: XCodeVersion) -> Target {
+        return .binaryTarget(name: name, path: "Dependencies/\(xcodeVersion.rawValue)/\(filename)")
+    }
+
+    static func binaryTarget(name: String, filename: String) -> Target {
+#if swift(>=5.5)
+        return .binaryTarget(name: name, filename: filename, xcodeVersion: .v13)
+#else
+        return .binaryTarget(name: name, filename: filename, xcodeVersion: .v12_5)
+#endif
+    }
+}

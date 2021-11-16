@@ -1,6 +1,7 @@
 .DS_Store
 
 Carthage/Checkouts
+Carthage/Build
 # fastlane specific
 fastlane/report.xml
 
@@ -17,4 +18,10 @@ fastlane/test_output
 # Fastlane.swift runner binary
 fastlane/FastlaneRunner
 
-# End of https://www.toptal.com/developers/gitignore/api/fastlane
+xcuserdata/
+*.xcuserdata
+*.xcuserstate
+*.pbxuser
+
+*.swiftpm
+Package.resolved

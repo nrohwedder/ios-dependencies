@@ -16,19 +16,6 @@ platform :ios do
     xcversion(version: "12.5.1")
   end
 
-  lane :unzip_dependencies do |options|
-    sh "defaults write com.apple.DebugSymbols DBGFileMappedPaths #{File.expand_path("../Carthage/Build/")}"
-    FileUtils.mkdir_p '../Carthage/Build/'
-    Dir.chdir('..') do
-      folder_name = "Dependencies/#{xcode_version}-zipped/"
-      Find.find(folder_name) do |path|
-        if path =~ /.*\.zip$/
-          sh "unzip -o #{File.expand_path(path)} -d Carthage/Build/"
-        end
-      end
-    end
-  end
-
   lane :build_dependencies do |options|
     ADDITIONAL_XCFRAMEWORK_DOWNLOADS = [
       {name: 'NewRelic', url: 'https://download.newrelic.com/ios_agent/NewRelic_XCFramework_Agent_7.3.1.zip'}
@@ -40,8 +27,8 @@ platform :ios do
     # clean carthage build folder
     FileUtils.rm_rf("../Carthage/.", secure: true)
 
-    # clean zip folder
-    FileUtils.rm_rf("../ios-mobility-dependencies/#{xcode_version}-zipped/.", secure: true)
+    # clean dependencies folder
+    FileUtils.rm_rf("../Dependencies/#{xcode_version}", secure: true)
 
     # checkout all dependencies
     carthage(command: 'update', no_build: true)
@@ -77,7 +64,7 @@ platform :ios do
     )
 
     # zip all xcframework
-    xcframeworks = zip_xcframeworks(output_directory_path: "ios-mobility-dependencies/#{xcode_version}-zipped")
+    xcframeworks = copy_xcframeworks(xcode_version: xcode_version, output_directory_path: "Dependencies")
 
     # Generate Package.swift
     erb(
@@ -93,7 +80,7 @@ platform :ios do
   def convert_universal_frameworks_to_xcframeworks()
     framework_names = []
     Dir.chdir('..') do
-      Find.find('Carthage/Build/iOS') do |path|
+      Find.find('Carthage/Build') do |path|
         if path =~ /.*\.framework$/
           framework_names << File.basename(path, File.extname(path))
         end
@@ -106,17 +93,21 @@ platform :ios do
 
   # Aggregates xcframeworks from Carthage build folder into a single .zip archive and cleans up Carthage/Build directory
   # Params:
+  # +xcode_version+:: STRING specifying the Xcode version
   # +output_directory_path+:: STRING describing the directory path to the output
   # Returns:
   # +xcframeworks+:: array of {name: STRING, path: STRING} objects describing successfully archived packages
-  def zip_xcframeworks(output_directory_path: :output_directory_path)
-    UI.message "Archiving xcframeworks to #{output_directory_path}"
+  def copy_xcframeworks(xcode_version: :xcode_version, output_directory_path: :output_directory_path)
+    UI.message "Copying xcframeworks to #{output_directory_path}"
     xcframeworks = []
     xcframework_paths = []
     Dir.chdir('..') do
+      sh "mkdir Dependencies/#{xcode_version}"
+
       Dir.glob('Carthage/Build/*').each do |path|
         if path =~ /.*\.xcframework$/
-          xcframework_paths << path 
+          xcframework_paths << path
+          sh "cp -a #{path} Dependencies/#{xcode_version}"
         else
           begin
             FileUtils.rm(path) # Deletes all files that doesn't match *.xcframework
@@ -130,11 +121,9 @@ platform :ios do
     xcframework_paths.each do |xcframework_path|
       xcframework = xcframework_path.split('/').last # braintree.xcframework
       xcframework_name = File.basename(xcframework, File.extname(xcframework)) # braintree
-      zip_path = "#{output_directory_path}/#{xcframework_name}.zip"
-      zip(path: xcframework_path, output_path: zip_path)
       xcframeworks << {
         name: xcframework_name,
-        path: "Carthage/Build/#{xcframework}",
+        filename: "#{xcframework}"
       }
     end
 

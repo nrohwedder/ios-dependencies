@@ -23,8 +23,35 @@ let package = Package(
         <% xcframeworks.each do |xcframework| %>
             .binaryTarget(
                 name: "<%= xcframework[:name] %>",
-                path: "<%= xcframework[:path] %>"           
+                filename: "<%= xcframework[:filename] %>"          
             ),
         <% end %>
     ]
 )
+
+extension Target {
+    enum XCodeVersion: String {
+        case v12_5, v13
+        
+        var rawValue: String {
+            switch self {
+            case .v12_5:
+                return "12.5"
+            case .v13:
+                return "13.0"
+            }
+        }
+    }
+    
+    private static func binaryTarget(name: String, filename: String, xcodeVersion: XCodeVersion) -> Target {
+        return .binaryTarget(name: name, path: "Dependencies/\(xcodeVersion.rawValue)/\(filename)")
+    }
+
+    static func binaryTarget(name: String, filename: String) -> Target {
+#if swift(>=5.5)
+        return .binaryTarget(name: name, filename: filename, xcodeVersion: .v13)
+#else
+        return .binaryTarget(name: name, filename: filename, xcodeVersion: .v12_5)
+#endif
+    }
+}

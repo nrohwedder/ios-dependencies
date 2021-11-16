@@ -1,0 +1,110 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeTestShared
+import BraintreeCore
+@_exported import BraintreeTestShared
+import Foundation
+import BraintreeCore.Private
+import Swift
+import UIKit
+import XCTest
+@objc @_inheritsConvenienceInitializers public class FakeBundle : Foundation.Bundle {
+  @objc override dynamic public func object(forInfoDictionaryKey key: Swift.String) -> Any?
+  @objc override dynamic public init?(path: Swift.String)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class FakeHTTP : BraintreeCore.BTHTTP {
+  @objc public var GETRequestCount: Swift.Int
+  @objc public var POSTRequestCount: Swift.Int
+  @objc public var lastRequestEndpoint: Swift.String?
+  public var lastRequestMethod: Swift.String?
+  @objc public var lastRequestParameters: Swift.Dictionary<Swift.AnyHashable, Any>?
+  public var cannedResponse: BraintreeCore.BTJSON?
+  @objc public var cannedConfiguration: BraintreeCore.BTJSON?
+  @objc public var cannedStatusCode: Swift.Int
+  public var cannedError: Swift.Error?
+  @objc public static func fakeHTTP() -> BraintreeTestShared.FakeHTTP
+  @objc public func stubRequest(withMethod httpMethod: Swift.String, toEndpoint endpoint: Swift.String, respondWith response: Any, statusCode: Swift.Int)
+  @objc public func stubRequest(withMethod httpMethod: Swift.String, toEndpoint endpoint: Swift.String, respondWithError error: Swift.Error)
+  @objc override dynamic public func get(_ endpoint: Swift.String, parameters: [Swift.String : Swift.String]?, completion completionBlock: ((BraintreeCore.BTJSON?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void)? = nil)
+  @objc override dynamic public func post(_ endpoint: Swift.String, parameters: [Swift.AnyHashable : Any]?, completion completionBlock: ((BraintreeCore.BTJSON?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void)? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class FakeGraphQLHTTP : BraintreeCore.BTGraphQLHTTP {
+  @objc public var lastRequestParameters: Swift.Dictionary<Swift.AnyHashable, Any>?
+  @objc public static func fakeHTTP() -> BraintreeTestShared.FakeGraphQLHTTP
+  @objc override dynamic public func post(_ endpoint: Swift.String, parameters: [Swift.AnyHashable : Any]?, completion completionBlock: ((BraintreeCore.BTJSON?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void)? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class FakeAPIHTTP : BraintreeCore.BTAPIHTTP {
+  @objc public var lastRequestParameters: Swift.Dictionary<Swift.AnyHashable, Any>?
+  @objc public static func fakeHTTP() -> BraintreeTestShared.FakeAPIHTTP
+  @objc override dynamic public func post(_ endpoint: Swift.String, parameters: [Swift.AnyHashable : Any]?, completion completionBlock: ((BraintreeCore.BTJSON?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void)? = nil)
+  @objc override dynamic public init(baseURL URL: Foundation.URL, accessToken: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class FakeDevice : UIKit.UIDevice {
+  @objc override dynamic public var systemVersion: Swift.String {
+    @objc get
+    @objc set(newSystemVersion)
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class MockAPIClient : BraintreeCore.BTAPIClient {
+  public var lastPOSTPath: Swift.String
+  public var lastPOSTParameters: [Swift.AnyHashable : Any]?
+  public var lastPOSTAPIClientHTTPType: BraintreeCore.BTAPIClientHTTPType?
+  public var lastGETPath: Swift.String
+  public var lastGETParameters: [Swift.String : Swift.String]?
+  public var lastGETAPIClientHTTPType: BraintreeCore.BTAPIClientHTTPType?
+  public var postedAnalyticsEvents: [Swift.String]
+  @objc public var cannedConfigurationResponseBody: BraintreeCore.BTJSON?
+  @objc public var cannedConfigurationResponseError: Foundation.NSError?
+  public var cannedResponseError: Foundation.NSError?
+  public var cannedHTTPURLResponse: Foundation.HTTPURLResponse?
+  public var cannedResponseBody: BraintreeCore.BTJSON?
+  @objc override dynamic public func get(_ path: Swift.String, parameters: [Swift.String : Swift.String]?, completion completionBlock: ((BraintreeCore.BTJSON?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void)? = nil)
+  @objc override dynamic public func post(_ path: Swift.String, parameters: [Swift.AnyHashable : Any]?, completion completionBlock: ((BraintreeCore.BTJSON?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void)? = nil)
+  @objc override dynamic public func get(_ path: Swift.String, parameters: [Swift.String : Swift.String]?, httpType: BraintreeCore.BTAPIClientHTTPType, completion completionBlock: ((BraintreeCore.BTJSON?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void)? = nil)
+  @objc override dynamic public func post(_ path: Swift.String, parameters: [Swift.AnyHashable : Any]?, httpType: BraintreeCore.BTAPIClientHTTPType, completion completionBlock: ((BraintreeCore.BTJSON?, Foundation.HTTPURLResponse?, Swift.Error?) -> Swift.Void)? = nil)
+  @objc override dynamic public func fetchOrReturnRemoteConfiguration(_ completionBlock: @escaping (BraintreeCore.BTConfiguration?, Swift.Error?) -> Swift.Void)
+  @objc override dynamic public func fetchPaymentMethodNonces(_ completion: @escaping ([BraintreeCore.BTPaymentMethodNonce]?, Swift.Error?) -> Swift.Void)
+  @objc override dynamic public func fetchPaymentMethodNonces(_ defaultFirst: Swift.Bool, completion: @escaping ([BraintreeCore.BTPaymentMethodNonce]?, Swift.Error?) -> Swift.Void)
+  @objc override dynamic public func copy(with source: BraintreeCore.BTClientMetadataSourceType, integration: BraintreeCore.BTClientMetadataIntegrationType) -> Self
+  @objc override dynamic public func sendAnalyticsEvent(_ name: Swift.String)
+  @objc override dynamic public var metadata: BraintreeCore.BTClientMetadata {
+    @objc get
+  }
+  @objc override dynamic public init?(authorization: Swift.String)
+  @objc override dynamic public init?(authorization: Swift.String, sendAnalyticsEvent: Swift.Bool)
+  @objc deinit
+}
+public class FakeApplication {
+  public var lastOpenURL: Foundation.URL?
+  public var openURLWasCalled: Swift.Bool
+  public var cannedCanOpenURL: Swift.Bool
+  public var canOpenURLWhitelist: [Foundation.URL]
+  public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MockViewControllerPresentingDelegate : ObjectiveC.NSObject, BraintreeCore.BTViewControllerPresentingDelegate {
+  public var requestsPresentationOfViewControllerExpectation: XCTest.XCTestExpectation?
+  public var requestsDismissalOfViewControllerExpectation: XCTest.XCTestExpectation?
+  public var lastViewController: UIKit.UIViewController?
+  public var lastPaymentDriver: Swift.AnyObject?
+  @objc public func paymentDriver(_ driver: Any, requestsDismissalOf viewController: UIKit.UIViewController)
+  @objc public func paymentDriver(_ driver: Any, requestsPresentationOf viewController: UIKit.UIViewController)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class TestClientTokenFactory : ObjectiveC.NSObject {
+  @objc public static let validClientToken: Swift.String
+  @objc public static func token(withVersion version: Swift.Int) -> Swift.String
+  @objc public static func token(withVersion version: Swift.Int, overrides: Swift.Dictionary<Swift.String, Any>) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension String {
+  public func isANonce() -> Swift.Bool
+}

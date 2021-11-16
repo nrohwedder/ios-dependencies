@@ -1,0 +1,503 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk
+iPhoneOS14.5.sdk
+/Users/nils.rohwedder/Library/Caches/org.carthage.CarthageKit/DerivedData/12.5.1_12E507/braintree_ios/5.4.3/Build/Intermediates.noindex/ArchiveIntermediates/BraintreePayPal/IntermediateBuildFilesPath/Braintree.build/Release-iphoneos/BraintreePayPal.build/DerivedSources/BraintreePayPal_vers.c
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios
+-[BTPayPalCheckoutRequest initWithAmount:]
+-[BTPayPalCheckoutRequest intentAsString]
+-[BTPayPalCheckoutRequest userActionAsString]
+-[BTPayPalCheckoutRequest hermesPath]
+-[BTPayPalCheckoutRequest paymentType]
+-[BTPayPalCheckoutRequest parametersWithConfiguration:]
+-[BTPayPalCheckoutRequest amount]
+-[BTPayPalCheckoutRequest currencyCode]
+-[BTPayPalCheckoutRequest setCurrencyCode:]
+-[BTPayPalCheckoutRequest intent]
+-[BTPayPalCheckoutRequest setIntent:]
+-[BTPayPalCheckoutRequest userAction]
+-[BTPayPalCheckoutRequest setUserAction:]
+-[BTPayPalCheckoutRequest offerPayLater]
+-[BTPayPalCheckoutRequest setOfferPayLater:]
+-[BTPayPalCheckoutRequest requestBillingAgreement]
+-[BTPayPalCheckoutRequest setRequestBillingAgreement:]
+-[BTPayPalCheckoutRequest .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_IVAR_$_BTPayPalCheckoutRequest._amount
+_OBJC_IVAR_$_BTPayPalCheckoutRequest._offerPayLater
+_OBJC_IVAR_$_BTPayPalCheckoutRequest._intent
+_OBJC_IVAR_$_BTPayPalCheckoutRequest._userAction
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_CLASSLIST_REFERENCES_$_.57
+_OBJC_SELECTOR_REFERENCES_.59
+_OBJC_SELECTOR_REFERENCES_.63
+_OBJC_SELECTOR_REFERENCES_.65
+_OBJC_SELECTOR_REFERENCES_.69
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_SELECTOR_REFERENCES_.77
+_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_SELECTOR_REFERENCES_.89
+_OBJC_IVAR_$_BTPayPalCheckoutRequest._currencyCode
+_OBJC_IVAR_$_BTPayPalCheckoutRequest._requestBillingAgreement
+__OBJC_METACLASS_RO_$_BTPayPalCheckoutRequest
+__OBJC_$_INSTANCE_METHODS_BTPayPalCheckoutRequest
+__OBJC_$_INSTANCE_VARIABLES_BTPayPalCheckoutRequest
+__OBJC_$_PROP_LIST_BTPayPalCheckoutRequest
+__OBJC_CLASS_RO_$_BTPayPalCheckoutRequest
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios/Sources/BraintreePayPal/BTPayPalCheckoutRequest.m
+Sources/BraintreePayPal/BTPayPalCheckoutRequest.m
+Sources/BraintreePayPal/Public/BraintreePayPal/BTPayPalCheckoutRequest.h
+-[BTPayPalCreditFinancingAmount initWithCurrency:value:]
+-[BTPayPalCreditFinancingAmount currency]
+-[BTPayPalCreditFinancingAmount setCurrency:]
+-[BTPayPalCreditFinancingAmount value]
+-[BTPayPalCreditFinancingAmount setValue:]
+-[BTPayPalCreditFinancingAmount .cxx_destruct]
+__OBJC_METACLASS_RO_$_BTPayPalCreditFinancingAmount
+__OBJC_$_INSTANCE_METHODS_BTPayPalCreditFinancingAmount
+_OBJC_IVAR_$_BTPayPalCreditFinancingAmount._currency
+_OBJC_IVAR_$_BTPayPalCreditFinancingAmount._value
+__OBJC_$_INSTANCE_VARIABLES_BTPayPalCreditFinancingAmount
+__OBJC_$_PROP_LIST_BTPayPalCreditFinancingAmount
+__OBJC_CLASS_RO_$_BTPayPalCreditFinancingAmount
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios/Sources/BraintreePayPal/BTPayPalCreditFinancingAmount.m
+Sources/BraintreePayPal/BTPayPalCreditFinancingAmount.m
+Sources/BraintreePayPal/Public/BraintreePayPal/BTPayPalCreditFinancingAmount.h
+-[BTConfiguration(PayPal) isPayPalEnabled]
+-[BTConfiguration(PayPal) isBillingAgreementsEnabled]
+_OBJC_SELECTOR_REFERENCES_.4
+__OBJC_$_CATEGORY_INSTANCE_METHODS_BTConfiguration_$_PayPal
+__OBJC_$_PROP_LIST_BTConfiguration_$_PayPal
+__OBJC_$_CATEGORY_BTConfiguration_$_PayPal
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios/Sources/BraintreePayPal/BTConfiguration+PayPal.m
+Sources/BraintreePayPal/BTConfiguration+PayPal.m
+-[BTPayPalCreditFinancing initWithCardAmountImmutable:monthlyPayment:payerAcceptance:term:totalCost:totalInterest:]
+-[BTPayPalCreditFinancing cardAmountImmutable]
+-[BTPayPalCreditFinancing setCardAmountImmutable:]
+-[BTPayPalCreditFinancing monthlyPayment]
+-[BTPayPalCreditFinancing setMonthlyPayment:]
+-[BTPayPalCreditFinancing payerAcceptance]
+-[BTPayPalCreditFinancing setPayerAcceptance:]
+-[BTPayPalCreditFinancing term]
+-[BTPayPalCreditFinancing setTerm:]
+-[BTPayPalCreditFinancing totalCost]
+-[BTPayPalCreditFinancing setTotalCost:]
+-[BTPayPalCreditFinancing totalInterest]
+-[BTPayPalCreditFinancing setTotalInterest:]
+-[BTPayPalCreditFinancing .cxx_destruct]
+__OBJC_METACLASS_RO_$_BTPayPalCreditFinancing
+__OBJC_$_INSTANCE_METHODS_BTPayPalCreditFinancing
+_OBJC_IVAR_$_BTPayPalCreditFinancing._cardAmountImmutable
+_OBJC_IVAR_$_BTPayPalCreditFinancing._payerAcceptance
+_OBJC_IVAR_$_BTPayPalCreditFinancing._monthlyPayment
+_OBJC_IVAR_$_BTPayPalCreditFinancing._term
+_OBJC_IVAR_$_BTPayPalCreditFinancing._totalCost
+_OBJC_IVAR_$_BTPayPalCreditFinancing._totalInterest
+__OBJC_$_INSTANCE_VARIABLES_BTPayPalCreditFinancing
+__OBJC_$_PROP_LIST_BTPayPalCreditFinancing
+__OBJC_CLASS_RO_$_BTPayPalCreditFinancing
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios/Sources/BraintreePayPal/BTPayPalCreditFinancing.m
+Sources/BraintreePayPal/BTPayPalCreditFinancing.m
+Sources/BraintreePayPal/Public/BraintreePayPal/BTPayPalCreditFinancing.h
++[BTPayPalDriver load]
+___22+[BTPayPalDriver load]_block_invoke
+___copy_helper_block_e8_
+___destroy_helper_block_e8_
+-[BTPayPalDriver initWithAPIClient:]
+-[BTPayPalDriver init]
+-[BTPayPalDriver applicationDidBecomeActive:]
+-[BTPayPalDriver dealloc]
+-[BTPayPalDriver requestBillingAgreement:completion:]
+-[BTPayPalDriver requestOneTimePayment:completion:]
+-[BTPayPalDriver tokenizePayPalAccountWithPayPalRequest:completion:]
+___68-[BTPayPalDriver tokenizePayPalAccountWithPayPalRequest:completion:]_block_invoke
+___68-[BTPayPalDriver tokenizePayPalAccountWithPayPalRequest:completion:]_block_invoke_2
+___copy_helper_block_e8_32b40s48s
+___destroy_helper_block_e8_32s40s48s
+-[BTPayPalDriver dictionaryFromResponseURL:]
+-[BTPayPalDriver handlePayPalRequestWithURL:error:paymentType:completion:]
+-[BTPayPalDriver performSwitchRequest:paymentType:completion:]
+___62-[BTPayPalDriver performSwitchRequest:paymentType:completion:]_block_invoke
+___copy_helper_block_e8_32s40b
+___destroy_helper_block_e8_32s40s
+-[BTPayPalDriver clientMetadata]
++[BTPayPalDriver accountAddressFromJSON:]
++[BTPayPalDriver shippingOrBillingAddressFromJSON:]
++[BTPayPalDriver creditFinancingAmountFromJSON:]
++[BTPayPalDriver creditFinancingFromJSON:]
++[BTPayPalDriver payPalAccountFromJSON:]
+-[BTPayPalDriver presentationAnchorForWebAuthenticationSession:]
+-[BTPayPalDriver verifyAppSwitchWithRemoteConfiguration:error:]
++[BTPayPalDriver eventStringForPaymentType:]
+-[BTPayPalDriver sendAnalyticsEventForInitiatingOneTouchForPaymentType:withSuccess:]
+-[BTPayPalDriver sendAnalyticsEventIfCreditFinancingInNonce:forPaymentType:]
+-[BTPayPalDriver sendAnalyticsEventForTokenizationSuccessForPaymentType:]
+-[BTPayPalDriver sendAnalyticsEventForTokenizationFailureForPaymentType:]
+-[BTPayPalDriver decorateApprovalURL:forRequest:]
+-[BTPayPalDriver handleBrowserSwitchReturnURL:paymentType:completion:]
+___70-[BTPayPalDriver handleBrowserSwitchReturnURL:paymentType:completion:]_block_invoke
++[BTPayPalDriver tokenFromApprovalURL:]
++[BTPayPalDriver parseQueryString:]
++[BTPayPalDriver isValidURLAction:]
++[BTPayPalDriver actionFromURLAction:]
+-[BTPayPalDriver returnedToAppAfterPermissionAlert]
+-[BTPayPalDriver setReturnedToAppAfterPermissionAlert:]
+-[BTPayPalDriver approvalUrl]
+-[BTPayPalDriver setApprovalUrl:]
+-[BTPayPalDriver apiClient]
+-[BTPayPalDriver setApiClient:]
+-[BTPayPalDriver clientMetadataID]
+-[BTPayPalDriver setClientMetadataID:]
+-[BTPayPalDriver payPalRequest]
+-[BTPayPalDriver setPayPalRequest:]
+-[BTPayPalDriver authenticationSession]
+-[BTPayPalDriver setAuthenticationSession:]
+-[BTPayPalDriver isAuthenticationSessionStarted]
+-[BTPayPalDriver setIsAuthenticationSessionStarted:]
+-[BTPayPalDriver .cxx_destruct]
+___clang_at_available_requires_core_foundation_framework
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.13
+___block_descriptor_40_e8__e38_"BTPaymentMethodNonce"16?0"BTJSON"8l
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_CLASSLIST_REFERENCES_$_.25
+_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_SELECTOR_REFERENCES_.31
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_SELECTOR_REFERENCES_.39
+_OBJC_SELECTOR_REFERENCES_.41
+_OBJC_SELECTOR_REFERENCES_.43
+_OBJC_CLASSLIST_REFERENCES_$_.44
+_OBJC_CLASSLIST_REFERENCES_$_.47
+_OBJC_SELECTOR_REFERENCES_.49
+_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_CLASSLIST_REFERENCES_$_.52
+_OBJC_CLASSLIST_REFERENCES_$_.55
+_OBJC_SELECTOR_REFERENCES_.61
+_OBJC_SELECTOR_REFERENCES_.67
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_SELECTOR_REFERENCES_.83
+_OBJC_SELECTOR_REFERENCES_.87
+_OBJC_SELECTOR_REFERENCES_.93
+_OBJC_SELECTOR_REFERENCES_.99
+_OBJC_SELECTOR_REFERENCES_.101
+_OBJC_CLASSLIST_REFERENCES_$_.102
+_OBJC_SELECTOR_REFERENCES_.104
+_OBJC_SELECTOR_REFERENCES_.106
+_OBJC_SELECTOR_REFERENCES_.108
+_OBJC_SELECTOR_REFERENCES_.110
+_OBJC_SELECTOR_REFERENCES_.112
+___block_descriptor_56_e8_32bs40s48s_e50_v32?0"BTJSON"8"NSHTTPURLResponse"16"NSError"24l
+_OBJC_SELECTOR_REFERENCES_.115
+___block_descriptor_56_e8_32bs40s48s_e37_v24?0"BTConfiguration"8"NSError"16l
+_OBJC_SELECTOR_REFERENCES_.118
+_OBJC_SELECTOR_REFERENCES_.120
+_OBJC_SELECTOR_REFERENCES_.124
+_OBJC_SELECTOR_REFERENCES_.144
+_OBJC_SELECTOR_REFERENCES_.150
+_OBJC_SELECTOR_REFERENCES_.152
+_OBJC_SELECTOR_REFERENCES_.156
+_OBJC_CLASSLIST_REFERENCES_$_.157
+_OBJC_SELECTOR_REFERENCES_.161
+_OBJC_SELECTOR_REFERENCES_.167
+_OBJC_SELECTOR_REFERENCES_.169
+_OBJC_SELECTOR_REFERENCES_.171
+_OBJC_SELECTOR_REFERENCES_.173
+_OBJC_CLASSLIST_REFERENCES_$_.174
+_OBJC_SELECTOR_REFERENCES_.176
+_OBJC_SELECTOR_REFERENCES_.178
+_OBJC_SELECTOR_REFERENCES_.186
+___block_descriptor_56_e8_32s40bs_e27_v24?0"NSURL"8"NSError"16l
+_OBJC_SELECTOR_REFERENCES_.189
+_OBJC_SELECTOR_REFERENCES_.191
+_OBJC_SELECTOR_REFERENCES_.193
+_OBJC_SELECTOR_REFERENCES_.195
+_OBJC_SELECTOR_REFERENCES_.197
+_OBJC_SELECTOR_REFERENCES_.203
+_OBJC_SELECTOR_REFERENCES_.205
+_OBJC_SELECTOR_REFERENCES_.207
+_OBJC_CLASSLIST_REFERENCES_$_.208
+_OBJC_SELECTOR_REFERENCES_.212
+_OBJC_SELECTOR_REFERENCES_.216
+_OBJC_SELECTOR_REFERENCES_.220
+_OBJC_SELECTOR_REFERENCES_.224
+_OBJC_SELECTOR_REFERENCES_.228
+_OBJC_SELECTOR_REFERENCES_.232
+_OBJC_SELECTOR_REFERENCES_.236
+_OBJC_CLASSLIST_REFERENCES_$_.247
+_OBJC_SELECTOR_REFERENCES_.249
+_OBJC_SELECTOR_REFERENCES_.253
+_OBJC_SELECTOR_REFERENCES_.257
+_OBJC_SELECTOR_REFERENCES_.263
+_OBJC_CLASSLIST_REFERENCES_$_.268
+_OBJC_SELECTOR_REFERENCES_.270
+_OBJC_SELECTOR_REFERENCES_.282
+_OBJC_SELECTOR_REFERENCES_.296
+_OBJC_SELECTOR_REFERENCES_.302
+_OBJC_SELECTOR_REFERENCES_.306
+_OBJC_CLASSLIST_REFERENCES_$_.307
+_OBJC_SELECTOR_REFERENCES_.309
+_OBJC_SELECTOR_REFERENCES_.311
+_OBJC_SELECTOR_REFERENCES_.313
+_OBJC_CLASSLIST_REFERENCES_$_.314
+_OBJC_SELECTOR_REFERENCES_.316
+_OBJC_SELECTOR_REFERENCES_.318
+_OBJC_SELECTOR_REFERENCES_.320
+_OBJC_SELECTOR_REFERENCES_.322
+_OBJC_SELECTOR_REFERENCES_.324
+_OBJC_SELECTOR_REFERENCES_.326
+_OBJC_SELECTOR_REFERENCES_.346
+_OBJC_SELECTOR_REFERENCES_.350
+_OBJC_SELECTOR_REFERENCES_.354
+_OBJC_CLASSLIST_REFERENCES_$_.361
+_OBJC_SELECTOR_REFERENCES_.363
+_OBJC_SELECTOR_REFERENCES_.365
+_OBJC_SELECTOR_REFERENCES_.367
+_OBJC_CLASSLIST_REFERENCES_$_.368
+_OBJC_SELECTOR_REFERENCES_.372
+_OBJC_SELECTOR_REFERENCES_.374
+_OBJC_SELECTOR_REFERENCES_.376
+_OBJC_SELECTOR_REFERENCES_.378
+_OBJC_SELECTOR_REFERENCES_.380
+_OBJC_SELECTOR_REFERENCES_.382
+_OBJC_SELECTOR_REFERENCES_.386
+_OBJC_CLASSLIST_REFERENCES_$_.387
+_OBJC_SELECTOR_REFERENCES_.389
+_OBJC_CLASSLIST_REFERENCES_$_.394
+_OBJC_SELECTOR_REFERENCES_.396
+_OBJC_SELECTOR_REFERENCES_.400
+_OBJC_SELECTOR_REFERENCES_.404
+_OBJC_SELECTOR_REFERENCES_.408
+_OBJC_SELECTOR_REFERENCES_.412
+_OBJC_SELECTOR_REFERENCES_.416
+_OBJC_SELECTOR_REFERENCES_.420
+_OBJC_SELECTOR_REFERENCES_.424
+_OBJC_SELECTOR_REFERENCES_.430
+_OBJC_SELECTOR_REFERENCES_.432
+_OBJC_SELECTOR_REFERENCES_.436
+___block_descriptor_56_e8_32s40bs_e50_v32?0"BTJSON"8"NSHTTPURLResponse"16"NSError"24l
+_OBJC_SELECTOR_REFERENCES_.438
+_OBJC_SELECTOR_REFERENCES_.440
+_OBJC_SELECTOR_REFERENCES_.446
+_OBJC_SELECTOR_REFERENCES_.450
+_OBJC_SELECTOR_REFERENCES_.454
+_OBJC_SELECTOR_REFERENCES_.456
+_OBJC_SELECTOR_REFERENCES_.458
+_OBJC_SELECTOR_REFERENCES_.460
+_OBJC_SELECTOR_REFERENCES_.462
+_OBJC_SELECTOR_REFERENCES_.464
+_OBJC_SELECTOR_REFERENCES_.468
+_OBJC_SELECTOR_REFERENCES_.470
+_OBJC_CLASSLIST_REFERENCES_$_.475
+_OBJC_SELECTOR_REFERENCES_.477
+_OBJC_SELECTOR_REFERENCES_.479
+_OBJC_SELECTOR_REFERENCES_.481
+__OBJC_$_CLASS_METHODS_BTPayPalDriver
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_ASWebAuthenticationPresentationContextProviding
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_ASWebAuthenticationPresentationContextProviding
+__OBJC_$_PROTOCOL_METHOD_TYPES_ASWebAuthenticationPresentationContextProviding
+__OBJC_PROTOCOL_$_ASWebAuthenticationPresentationContextProviding
+__OBJC_LABEL_PROTOCOL_$_ASWebAuthenticationPresentationContextProviding
+__OBJC_CLASS_PROTOCOLS_$_BTPayPalDriver
+__OBJC_METACLASS_RO_$_BTPayPalDriver
+__OBJC_$_INSTANCE_METHODS_BTPayPalDriver
+_OBJC_IVAR_$_BTPayPalDriver._returnedToAppAfterPermissionAlert
+_OBJC_IVAR_$_BTPayPalDriver._isAuthenticationSessionStarted
+_OBJC_IVAR_$_BTPayPalDriver._approvalUrl
+_OBJC_IVAR_$_BTPayPalDriver._apiClient
+_OBJC_IVAR_$_BTPayPalDriver._clientMetadataID
+_OBJC_IVAR_$_BTPayPalDriver._payPalRequest
+_OBJC_IVAR_$_BTPayPalDriver._authenticationSession
+__OBJC_$_INSTANCE_VARIABLES_BTPayPalDriver
+__OBJC_$_PROP_LIST_BTPayPalDriver
+__OBJC_CLASS_RO_$_BTPayPalDriver
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios/Sources/BraintreePayPal/BTPayPalDriver.m
+Sources/BraintreePayPal/BTPayPalDriver.m
+Sources/BraintreePayPal/BTPayPalDriver_Internal.h
+__70-[BTPayPalDriver handleBrowserSwitchReturnURL:paymentType:completion:]_block_invoke
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40b
+__62-[BTPayPalDriver performSwitchRequest:paymentType:completion:]_block_invoke
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32b40s48s
+__68-[BTPayPalDriver tokenizePayPalAccountWithPayPalRequest:completion:]_block_invoke_2
+__68-[BTPayPalDriver tokenizePayPalAccountWithPayPalRequest:completion:]_block_invoke
+__destroy_helper_block_e8_
+__copy_helper_block_e8_
+__22+[BTPayPalDriver load]_block_invoke
+-[BTPayPalRequest init]
+-[BTPayPalRequest landingPageTypeAsString]
+-[BTPayPalRequest parametersWithConfiguration:]
+-[BTPayPalRequest isShippingAddressRequired]
+-[BTPayPalRequest setShippingAddressRequired:]
+-[BTPayPalRequest isShippingAddressEditable]
+-[BTPayPalRequest setShippingAddressEditable:]
+-[BTPayPalRequest localeCode]
+-[BTPayPalRequest setLocaleCode:]
+-[BTPayPalRequest shippingAddressOverride]
+-[BTPayPalRequest setShippingAddressOverride:]
+-[BTPayPalRequest landingPageType]
+-[BTPayPalRequest setLandingPageType:]
+-[BTPayPalRequest displayName]
+-[BTPayPalRequest setDisplayName:]
+-[BTPayPalRequest merchantAccountID]
+-[BTPayPalRequest setMerchantAccountID:]
+-[BTPayPalRequest lineItems]
+-[BTPayPalRequest setLineItems:]
+-[BTPayPalRequest billingAgreementDescription]
+-[BTPayPalRequest setBillingAgreementDescription:]
+-[BTPayPalRequest activeWindow]
+-[BTPayPalRequest setActiveWindow:]
+-[BTPayPalRequest hermesPath]
+-[BTPayPalRequest paymentType]
+-[BTPayPalRequest .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_CLASSLIST_REFERENCES_$_.11
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.47
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_SELECTOR_REFERENCES_.55
+_OBJC_SELECTOR_REFERENCES_.57
+_OBJC_CLASSLIST_REFERENCES_$_.58
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.64
+_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_CLASSLIST_REFERENCES_$_.69
+__OBJC_METACLASS_RO_$_BTPayPalRequest
+__OBJC_$_INSTANCE_METHODS_BTPayPalRequest
+_OBJC_IVAR_$_BTPayPalRequest._shippingAddressRequired
+_OBJC_IVAR_$_BTPayPalRequest._shippingAddressEditable
+_OBJC_IVAR_$_BTPayPalRequest._localeCode
+_OBJC_IVAR_$_BTPayPalRequest._shippingAddressOverride
+_OBJC_IVAR_$_BTPayPalRequest._landingPageType
+_OBJC_IVAR_$_BTPayPalRequest._displayName
+_OBJC_IVAR_$_BTPayPalRequest._merchantAccountID
+_OBJC_IVAR_$_BTPayPalRequest._lineItems
+_OBJC_IVAR_$_BTPayPalRequest._billingAgreementDescription
+_OBJC_IVAR_$_BTPayPalRequest._activeWindow
+_OBJC_IVAR_$_BTPayPalRequest._hermesPath
+_OBJC_IVAR_$_BTPayPalRequest._paymentType
+__OBJC_$_INSTANCE_VARIABLES_BTPayPalRequest
+__OBJC_$_PROP_LIST_BTPayPalRequest
+__OBJC_CLASS_RO_$_BTPayPalRequest
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios/Sources/BraintreePayPal/BTPayPalRequest.m
+Sources/BraintreePayPal/BTPayPalRequest.m
+Sources/BraintreePayPal/BTPayPalRequest_Internal.h
+Sources/BraintreePayPal/Public/BraintreePayPal/BTPayPalRequest.h
+-[BTPayPalLineItem initWithQuantity:unitAmount:name:kind:]
+-[BTPayPalLineItem requestParameters]
+-[BTPayPalLineItem quantity]
+-[BTPayPalLineItem unitAmount]
+-[BTPayPalLineItem name]
+-[BTPayPalLineItem kind]
+-[BTPayPalLineItem unitTaxAmount]
+-[BTPayPalLineItem setUnitTaxAmount:]
+-[BTPayPalLineItem itemDescription]
+-[BTPayPalLineItem setItemDescription:]
+-[BTPayPalLineItem productCode]
+-[BTPayPalLineItem setProductCode:]
+-[BTPayPalLineItem url]
+-[BTPayPalLineItem setUrl:]
+-[BTPayPalLineItem .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_SELECTOR_REFERENCES_.28
+__OBJC_METACLASS_RO_$_BTPayPalLineItem
+__OBJC_$_INSTANCE_METHODS_BTPayPalLineItem
+_OBJC_IVAR_$_BTPayPalLineItem._quantity
+_OBJC_IVAR_$_BTPayPalLineItem._unitAmount
+_OBJC_IVAR_$_BTPayPalLineItem._name
+_OBJC_IVAR_$_BTPayPalLineItem._kind
+_OBJC_IVAR_$_BTPayPalLineItem._unitTaxAmount
+_OBJC_IVAR_$_BTPayPalLineItem._itemDescription
+_OBJC_IVAR_$_BTPayPalLineItem._productCode
+_OBJC_IVAR_$_BTPayPalLineItem._url
+__OBJC_$_INSTANCE_VARIABLES_BTPayPalLineItem
+__OBJC_$_PROP_LIST_BTPayPalLineItem
+__OBJC_CLASS_RO_$_BTPayPalLineItem
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios/Sources/BraintreePayPal/BTPayPalLineItem.m
+Sources/BraintreePayPal/BTPayPalLineItem.m
+Sources/BraintreePayPal/Public/BraintreePayPal/BTPayPalLineItem.h
+-[BTPayPalVaultRequest hermesPath]
+-[BTPayPalVaultRequest paymentType]
+-[BTPayPalVaultRequest parametersWithConfiguration:]
+-[BTPayPalVaultRequest offerCredit]
+-[BTPayPalVaultRequest setOfferCredit:]
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_CLASSLIST_REFERENCES_$_.19
+_OBJC_IVAR_$_BTPayPalVaultRequest._offerCredit
+__OBJC_METACLASS_RO_$_BTPayPalVaultRequest
+__OBJC_$_INSTANCE_METHODS_BTPayPalVaultRequest
+__OBJC_$_INSTANCE_VARIABLES_BTPayPalVaultRequest
+__OBJC_$_PROP_LIST_BTPayPalVaultRequest
+__OBJC_CLASS_RO_$_BTPayPalVaultRequest
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios/Sources/BraintreePayPal/BTPayPalVaultRequest.m
+Sources/BraintreePayPal/Public/BraintreePayPal/BTPayPalVaultRequest.h
+Sources/BraintreePayPal/BTPayPalVaultRequest.m
+-[BTPayPalAccountNonce initWithNonce:email:firstName:lastName:phone:billingAddress:shippingAddress:clientMetadataID:payerID:isDefault:creditFinancing:]
+-[BTPayPalAccountNonce email]
+-[BTPayPalAccountNonce setEmail:]
+-[BTPayPalAccountNonce firstName]
+-[BTPayPalAccountNonce setFirstName:]
+-[BTPayPalAccountNonce lastName]
+-[BTPayPalAccountNonce setLastName:]
+-[BTPayPalAccountNonce phone]
+-[BTPayPalAccountNonce setPhone:]
+-[BTPayPalAccountNonce billingAddress]
+-[BTPayPalAccountNonce setBillingAddress:]
+-[BTPayPalAccountNonce shippingAddress]
+-[BTPayPalAccountNonce setShippingAddress:]
+-[BTPayPalAccountNonce clientMetadataID]
+-[BTPayPalAccountNonce setClientMetadataID:]
+-[BTPayPalAccountNonce payerID]
+-[BTPayPalAccountNonce setPayerID:]
+-[BTPayPalAccountNonce creditFinancing]
+-[BTPayPalAccountNonce setCreditFinancing:]
+-[BTPayPalAccountNonce .cxx_destruct]
+_OBJC_IVAR_$_BTPayPalAccountNonce._email
+_OBJC_IVAR_$_BTPayPalAccountNonce._firstName
+_OBJC_IVAR_$_BTPayPalAccountNonce._lastName
+_OBJC_IVAR_$_BTPayPalAccountNonce._phone
+_OBJC_IVAR_$_BTPayPalAccountNonce._billingAddress
+_OBJC_IVAR_$_BTPayPalAccountNonce._shippingAddress
+_OBJC_IVAR_$_BTPayPalAccountNonce._clientMetadataID
+_OBJC_IVAR_$_BTPayPalAccountNonce._payerID
+_OBJC_IVAR_$_BTPayPalAccountNonce._creditFinancing
+__OBJC_METACLASS_RO_$_BTPayPalAccountNonce
+__OBJC_$_INSTANCE_METHODS_BTPayPalAccountNonce
+__OBJC_$_INSTANCE_VARIABLES_BTPayPalAccountNonce
+__OBJC_$_PROP_LIST_BTPayPalAccountNonce
+__OBJC_CLASS_RO_$_BTPayPalAccountNonce
+/Users/nils.rohwedder/Mobimeo/ios-dependencies/Carthage/Checkouts/braintree_ios/Sources/BraintreePayPal/BTPayPalAccountNonce.m
+Sources/BraintreePayPal/BTPayPalAccountNonce.m
+Sources/BraintreePayPal/Public/BraintreePayPal/BTPayPalAccountNonce.h
